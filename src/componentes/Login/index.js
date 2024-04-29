@@ -2,6 +2,7 @@ import Footer from "../Footer";
 import BarraAcessibilidade from "../BarraAcessibilidade";
 import NavBar from "../NavBar";
 import Logar from "../Logar";
+import Form from "../Form";
 
 
 function Login() {
@@ -10,6 +11,7 @@ function Login() {
             <BarraAcessibilidade/>
             <NavBar/>
             <Logar/>
+            <Form placeholder="nome"/>
             <Footer />
         </div>
     );
