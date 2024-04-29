@@ -1,0 +1,29 @@
+.depoimentos {
+    background-color: #212121;
+}
+.DepoimentosContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin: 50px;
+}
+.DepoimentosContainer .depoimento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.DepoimentosContainer .texto {
+    flex: 1;
+    margin-right: 50px; /* Espaçamento entre a imagem e o texto */
+    margin-left: 50px;
+    text-align: justify;
+}
+.DepoimentosContainer .veterinario {
+    margin-left: 20px;
+}
+.titulodepoimentos{
+    font-size: 48px;
+    color: white;
+    margin-left: 100px;
+}

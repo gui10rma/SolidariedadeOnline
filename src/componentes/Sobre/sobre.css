@@ -1,0 +1,19 @@
+.SobreTexto {
+    color: white;
+    background-color: #6D5901;
+    padding: 32px 128px;
+    border-radius: 64px;
+    max-width: 50%;
+    text-align: justify;
+    margin: 0 auto; /* Adicionado para centralizar horizontalmente */
+    display: flex; /* Adicionado para centralizar verticalmente */
+    flex-direction: column; /* Adicionado para centralizar verticalmente */
+    align-items: center; /* Adicionado para centralizar verticalmente */
+    font-size: 24px;
+    
+}
+.SobreTitulo{
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
