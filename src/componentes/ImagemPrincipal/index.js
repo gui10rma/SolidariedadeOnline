@@ -1,9 +1,28 @@
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import "./imagemprincipal.css"
-const Imagemprincipal = () =>{
-    return(
-        
-            <img src='/imagens/ImagemPrincipal.png' alt="Ongs de destaque" className="imgOngs"/>
-    
-    )
-}
-export default Imagemprincipal
+
+const ImagemPrincipal = ({ images }) => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
+
+    return (
+        <Slider {...settings}>
+            {images.map((image, index) => (
+                <div key={index}>
+                    <img src={image.src} alt={image.alt} className="imgOngs" />
+                </div>
+            ))}
+        </Slider>
+    );
+};
+
+
+export default ImagemPrincipal;

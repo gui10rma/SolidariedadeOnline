@@ -1,0 +1,12 @@
+
+.input3{
+    background: rgb(58, 58, 58);
+    width: 300px;
+    height: 40px;
+    border: none;
+    padding: 1px;
+    margin: 10px auto; /* 10% de margem superior e inferior, auto para centralizar horizontalmente */
+    border-radius: 10px;
+    color: white;
+    display: block; /* Para garantir que o elemento seja exibido como bloco */
+}

@@ -5,6 +5,7 @@ import Form from "../Form"
 import FormList from "../FormList"
 import NavBar from "../NavBar"
 import "./dadosempresa.css"
+import Botao2 from "../Botao2"
 
 const DadosEmpresa = () => {
 
@@ -18,6 +19,7 @@ const DadosEmpresa = () => {
         "Justiça Social"
 
     ]
+    
     const [RazãoSocial, setRazãoSocial] = useState('')
     const [NomeResponsavel, setNomeResponsavel] = useState('')
     const [Categoria, setCategoria] = useState('')
@@ -31,7 +33,10 @@ const DadosEmpresa = () => {
         <form className="DadosEmpresa">
             <BarraAcessibilidade />
             <NavBar />
+            <div className="subtitulo">
             <h7>Cadastro Ongs</h7>
+            </div>
+            <div className="formulario">
             <Form
                 obrigatorio={true}
                 placeholder="Razão Social/Nome Titular"
@@ -67,6 +72,10 @@ const DadosEmpresa = () => {
                 placeholder="ConfirmarSenha"
                 valor={ConfirmarSenha}
                 aoAlterar={valor => setConfirmarSenha(valor)} />
+                </div>
+                <div className="botãoCadastro">
+            <Botao2 texto="Avançar"/>
+            </div>
             <Footer />
 
         </form>

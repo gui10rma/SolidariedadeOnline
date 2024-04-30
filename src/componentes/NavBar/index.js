@@ -9,11 +9,17 @@ const NavBar = () => {
         <div className="NavBar">
             <Logo />
             <span className="SolidariedadeTexto">Solidariedade Online</span>
+            <Link to="/" className="NavLink">
             <Botao texto="Home" />
+            </Link>
+            <Link to={"/depoimentos"}>
             <Botao texto="Depoimentos" />
+            </Link>
             <Botao texto="Categorias" />
             <Botao texto="Doações" />
+            <Link to="/login" className="NavLink">
             <BotaoComImagem src="/imagens/Perfil.png" alt="Perfil" />
+            </Link>
             </div>
         
 

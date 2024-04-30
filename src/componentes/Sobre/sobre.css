@@ -10,7 +10,7 @@
     flex-direction: column; /* Adicionado para centralizar verticalmente */
     align-items: center; /* Adicionado para centralizar verticalmente */
     font-size: 24px;
-    
+    margin-bottom: 100px;
 }
 .SobreTitulo{
     color: white;

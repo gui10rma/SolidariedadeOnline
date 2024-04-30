@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
+import Botao2 from '../Botao2';
+import "./logar.css";
 
 function Logar() {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
     const [loggedIn, setLoggedIn] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (username === 'usuario' && password === 'senha') {
+        if (email === 'Email' && senha === 'senha') {
             setLoggedIn(true);
         } else {
             alert('Usuário ou senha incorretos');
@@ -16,38 +18,36 @@ function Logar() {
 
     const handleLogout = () => {
         setLoggedIn(false);
-        setUsername('');
-        setPassword('');
+        setEmail('');
+        setSenha('');
     };
 
     return (
         <div>
             {loggedIn ? (
                 <div>
-                    <p>Bem-vindo, {username}!</p>
+                    <p>Bem-vindo, {email}!</p>
                     <button onClick={handleLogout}>Logout</button>
                 </div>
             ) : (
                 <form onSubmit={handleSubmit}>
-                    <label>
-                        Username:
-                        <input
-                            type="text"
-                            value={username}
-                            onChange={(e) => setUsername(e.target.value)}
-                        />
-                    </label>
+                    <input className='input3'
+                        type="text"
+                        placeholder="Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        
+                    />
                     <br />
-                    <label>
-                        Password:
-                        <input
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                        />
-                    </label>
+                    <input className='input3'
+                        type="password"
+                        placeholder="Senha"
+                        value={senha}
+                        onChange={(e) => setSenha(e.target.value)}
+                        
+                    />
                     <br />
-                    <button type="submit">Login</button>
+                    <Botao2 texto="Entrar" />
                 </form>
             )}
         </div>

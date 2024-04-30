@@ -1,13 +1,19 @@
 import "./formlist.css"
 
-const FormList = (props) =>{
-    return(
+const FormList = (props) => {
+    const aoDigitado = (evento) => {
+        props.aoAlterar(evento.target.value)
+        
+    }
+    return (
         <div className="formlist">
-            <select onChange={evento =>props.aoAlterado(evento.target.value)} required={props.required} value={props.value}>
-                {props.itens.map(item=>{
-                    return<option key={item}>{item}</option>
-                })}
-            </select>
+            <section>
+                <select className="input"onChange= {aoDigitado} required={props.required} value={props.value}>
+                    {props.itens.map(item => {
+                        return <option key={item}>{item}</option>
+                    })}
+                </select>
+            </section>
         </div>
     )
 }

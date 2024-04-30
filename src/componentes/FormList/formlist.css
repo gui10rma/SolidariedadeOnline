@@ -1,0 +1,23 @@
+select{
+    background: rgb(58, 58, 58);
+    width: 800px;
+    height: 40px;
+    border: none;
+    padding: 1px;
+    margin: 1%;
+    border-radius: 10px;
+}
+option{
+    color:white;
+
+}
+.input{
+    background: rgb(58, 58, 58);
+    width: 75%;
+    height: 40px;
+    border: none;
+    padding: 1px;
+    margin: 1%;
+    border-radius: 10px;
+    color: white;
+}

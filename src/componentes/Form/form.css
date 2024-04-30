@@ -1,0 +1,20 @@
+.campo-texto{
+    width: 100%;
+    border: none;
+    align-items: center;
+
+}
+.campo-texto input{
+    background: rgb(58, 58, 58);
+    width: 75%;
+    height: 40px;
+    border: none;
+    padding: 1px;
+    margin: 1%;
+    border-radius: 10px;
+    color: white;
+    
+}
+.campo-texto input::placeholder{
+    color: rgb(136, 135, 135);
+}

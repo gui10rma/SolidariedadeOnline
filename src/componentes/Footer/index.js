@@ -20,7 +20,7 @@ const Footer = () => {
                 <BotaoComImagem2 src='/imagens/Telegram.png'alt="Telefone"/>
                 <BotaoComImagem2 src='/imagens/email.png'alt="Telefone"/>
                 <BotaoComImagem2 src='/imagens/Telefone.png'alt="Telefone"/>
-                <p><Botao2 texto="Envie um email"/></p>
+                <p className="envieemail"><Botao2 texto="Envie um email"/></p>
                 </div>
             </div>
         </div>
