@@ -5,6 +5,7 @@ const Form = (props) => {
 
     const aoDigitado = (evento) => {
         props.aoAlterar(evento.target.value)
+        console.log(placeholderModificada)
         
     }
 

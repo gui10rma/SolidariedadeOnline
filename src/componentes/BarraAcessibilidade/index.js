@@ -1,18 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './BarraAcessibilidade.css'; // Importe o arquivo CSS para estilização
 
 const BarraAcessibilidade = () => {
+    const aumentarFonte = () => {
+        const body = document.querySelector('body');
+        const currentFontSize = window.getComputedStyle(body).fontSize;
+        const currentFontSizeValue = parseFloat(currentFontSize);
+        body.style.fontSize = (currentFontSizeValue + 1) + 'px';
+    };
+
+    const diminuirFonte = () => {
+        const body = document.querySelector('body');
+        const currentFontSize = window.getComputedStyle(body).fontSize;
+        const currentFontSizeValue = parseFloat(currentFontSize);
+        body.style.fontSize = (currentFontSizeValue - 1) + 'px';
+    };
+
+    const [contraste, setContraste] = useState(false);
+
+    const toggleContraste = () => {
+        setContraste(!contraste);
+    };
+
+
     return(
     <div className="barra_acessibilidade">
         <div>
-            <a tabindex="1" href="#menu">[1] ir para o menu</a>
-            <a tabindex="2" href="#conteudo">[2] ir para o conteudo</a>
-            <a tabindex="3" href="#rodape">[3] ir para o rodape</a>        
-            <a tabindex="4" href="acessibilidade.html">ACESSIBILIDADE</a>
-            <span tabindex="5" id="btn-contraste-on">CONTRASTE PRETO</span>
-            <span tabindex="6" id="btn-contraste-off">SEM CONTRASTE</span>
-            <span tabindex="7" id="btn-font-plus" onclick="increaseFont()">A+</span>
-            <span tabindex="8" id="btn-font-minus" onclick="decreaseFont()">A-</span>
+            <a href="#menu">[1] Ir para o menu</a>
+            <a href="#conteudo">[2] Ir para o conteúdo</a>
+            <a href="#rodape">[3] Ir para o rodapé</a>
+            <a href="acessibilidade.html">Acessibilidade</a>
+            <button onClick={toggleContraste} id="btn-contraste-on">CONTRASTE PRETO</button>
+            <button onClick={toggleContraste} id="btn-contraste-off">SEM CONTRASTE</button>
+            <button onClick={aumentarFonte}>A+</button>
+            <button onClick={diminuirFonte}>A-</button>
         </div>
     </div>
     )

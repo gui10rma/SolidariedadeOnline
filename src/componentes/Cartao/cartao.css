@@ -1,0 +1,49 @@
+.credit-card-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhar os elementos no topo */
+    height: 100vh;
+}
+
+.credit-card-container {
+    display: flex;
+    flex-direction: column; /* Empilhar os elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Espaço entre o cartão e o input */
+}
+
+.credit-card {
+    width: 300px; /* Largura inicial do cartão */
+    transition: width 0.3s; /* Transição suave para o aumento de tamanho */
+    margin-bottom: 20px; /* Espaço entre o cartão e o input */
+}
+
+.input-container {
+    width: 300px; /* Largura dos inputs */
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.btn-dark {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-dark:hover {
+    background-color: #23272b;
+}

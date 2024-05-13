@@ -4,31 +4,13 @@ import BarraAcessibilidade from "../BarraAcessibilidade"
 import Botao2 from "../Botao2"
 import Footer from "../Footer"
 import Form from "../Form"
-import FormList from "../FormList"
 import NavBar from "../NavBar"
-import "./dadosempresa.css"
-import ColocarImagem from "../ColocarImagem"
+import "./dadosdoadores.css"
 
+const DadosDoadores = () => {
 
-
-const DadosEmpresa = () => {
-
-    const Categorias = [
-        "Animais",
-        "Meio Ambiente",
-        "Criança e Adolescente",
-        "LGBTQIA+",
-        "Idosos",
-        "Pessoas com Deficiência",
-        "Justiça Social"
-
-    ]
-
-
-    const [RazãoSocial, setRazãoSocial] = useState('')
-    const [NomeResponsavel, setNomeResponsavel] = useState('')
-    const [Categoria, setCategoria] = useState('')
-    const [CNPJ, setCNPJ] = useState('')
+    const [Nome, setNome] = useState('')
+    const [CPF, setCPF] = useState('')
     const [Email, setEmail] = useState('')
     const [Senha, setSenha] = useState('')
     const [ConfirmarSenha, setConfirmarSenha] = useState('')
@@ -37,37 +19,26 @@ const DadosEmpresa = () => {
     const [Cidade, setCidade] = useState('')
     const [Telefone, setTelefone] = useState('')
     const [CEP, setCEP] = useState('')
-    const todosCamposPreenchidos = RazãoSocial && NomeResponsavel && Categoria && CNPJ && Email && Senha && ConfirmarSenha
-
+    const todosCamposPreenchidos = Nome && CPF && Email && Senha && ConfirmarSenha && Rua && Estado && Cidade && Telefone && CEP;
 
     return (
-        <form className="DadosEmpresa">
+        <form className="DadosPessoais">
             <BarraAcessibilidade />
             <NavBar />
             <div className="subtitulo">
-                <h7>Cadastro Ongs</h7>
+                <h7>Dados Pessoais</h7>
             </div>
             <div className="formulario">
                 <Form
                     obrigatorio={true}
-                    placeholder="Razão Social/Nome Titular"
-                    valor={RazãoSocial}
-                    aoAlterar={valor => setRazãoSocial(valor)} />
+                    placeholder="Nome"
+                    valor={Nome}
+                    aoAlterar={valor => setNome(valor)} />
                 <Form
                     obrigatorio={true}
-                    placeholder="Nome Responsavel"
-                    valor={NomeResponsavel}
-                    aoAlterar={valor => setNomeResponsavel(valor)} />
-                <Form
-                    obrigatorio={true}
-                    placeholder="CNPJ"
-                    valor={CNPJ}
-                    aoAlterar={valor => setCNPJ(valor)} />
-                <FormList
-                    obrigatorio={true}
-                    itens={Categorias}
-                    valor={Categoria}
-                    aoAlterar={valor => setCategoria(valor)} />
+                    placeholder="CPF"
+                    valor={CPF}
+                    aoAlterar={valor => setCPF(valor)} />
                 <Form
                     obrigatorio={true}
                     placeholder="Email"
@@ -108,15 +79,14 @@ const DadosEmpresa = () => {
                     placeholder="Telefone"
                     valor={Telefone}
                     aoAlterar={valor => setTelefone(valor)} />
-                <ColocarImagem/>    
             </div>
             <div className="botãoCadastro">
                 {todosCamposPreenchidos ? (
-                    <Link to={"/"}>
+                    <Link to={"/DadosDoadoresEndereço"}>
                         <Botao2 texto="Cadastrar" />
                     </Link>
                 ) : (
-                    <Botao2 texto="Cadastrar" disabled />
+                    <Botao2 texto="Avançar" disabled />
                 )}
             </div>
             <Footer />
@@ -125,4 +95,4 @@ const DadosEmpresa = () => {
     )
 }
 
-export default DadosEmpresa
+export default DadosDoadores

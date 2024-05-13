@@ -17,7 +17,9 @@ function Login() {
                 <div className="divisao2">
                     <h8 className="cadastrartitulo">Seja um doador - Cadastre-se</h8>
                     <p className="cadatrartexto">Cadastrar-se na Solidariedade Online oferece benefícios como facilidade de doação, acompanhamento do histórico de contribuições, recebimento de informações sobre novas campanhas, integração em uma comunidade solidária e garantia de segurança e transparência nos dados fornecidos.</p>
+                    <Link to={"/DadosDoadores"}>
                     <Botao2 texto="Aqui" />
+                    </Link>
                     <h9 className="cadastrartitulo">Ongs - Cadastre-se </h9>
                     <p className="cadatrartexto">Não perca tempo, junte-se a nós nessa jornada de solidariedade e impacto positivo! Clique aqui para se cadastrar agora mesmo.</p>
                     <Link to={"/CadastroEmpresa"}>
