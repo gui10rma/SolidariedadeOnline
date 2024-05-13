@@ -9,16 +9,6 @@ import CartaoAdd from "./componentes/Cartaoadd";
 import Categorias from "./componentes/Categoria";
 
 function App() {
-  const Categorias = [
-    "Animais",
-    "Meio Ambiente",
-    "Criança e Adolescente",
-    "LGBTQIA+",
-    "Idosos",
-    "Pessoas com Deficiência",
-    "Justiça Social"
-
-]
   return (
     <div className="App">
       <BrowserRouter>

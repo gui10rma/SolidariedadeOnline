@@ -1,0 +1,21 @@
+.Drop {
+    background-color: #10438F;
+    color: white;
+    padding: 5px 10px; /* Ajusta o padding para reduzir o tamanho */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px; /* Reduz o tamanho da fonte */
+    height: auto; /* Ajusta a altura automaticamente */
+    width: auto; /* Ajusta a largura automaticamente */
+}
+
+.Drop option {
+    background-color: #10438F;
+    color: white;
+}
+
+.Drop:focus {
+    outline: none;
+    box-shadow: 0 0 5px #10438F;
+}

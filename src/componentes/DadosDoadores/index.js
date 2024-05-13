@@ -19,7 +19,7 @@ const DadosDoadores = () => {
     const [Cidade, setCidade] = useState('')
     const [Telefone, setTelefone] = useState('')
     const [CEP, setCEP] = useState('')
-    const todosCamposPreenchidos = Nome && CPF && Email && Senha && ConfirmarSenha && Rua && Estado && Cidade && Telefone && CEP;
+    const todosCamposPreenchidos = Nome && CPF && Email && Senha && ConfirmarSenha && Rua && Estado && Cidade && Telefone  && CEP;
 
     return (
         <form className="DadosPessoais">

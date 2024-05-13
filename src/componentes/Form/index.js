@@ -15,6 +15,7 @@ const Form = (props) => {
                 {props.label}
             </label>
             <input value={props.valor} onChange={aoDigitado} required={props.obrigatorio} placeholder={placeholderModificada}/>
+
         </div>
     )
 

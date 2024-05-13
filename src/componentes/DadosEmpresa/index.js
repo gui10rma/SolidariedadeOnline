@@ -1,18 +1,23 @@
-import { useState } from "react"
-import { Link } from "react-router-dom"
-import BarraAcessibilidade from "../BarraAcessibilidade"
-import Botao2 from "../Botao2"
-import Footer from "../Footer"
-import Form from "../Form"
-import FormList from "../FormList"
-import NavBar from "../NavBar"
-import "./dadosempresa.css"
-import ColocarImagem from "../ColocarImagem"
+// DadosEmpresa.js
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import BarraAcessibilidade from "../BarraAcessibilidade";
+import Botao2 from "../Botao2";
+import Footer from "../Footer";
+import Form from "../Form";
+import FormList from "../FormList";
+import NavBar from "../NavBar";
+import "./dadosempresa.css";
+import ColocarImagem from "../ColocarImagem";
+import Cookies from "js-cookie";
 
-
-
-const DadosEmpresa = () => {
-
+/**
+ * DadosEmpresa component is responsible for rendering the form
+ * to collect data from the user and register a new ONG.
+ * It also handles the state of the form inputs and the logic to save the ONG data.
+ */
+function DadosEmpresa() {
+    // Array with the available categories for the ONG
     const Categorias = [
         "Animais",
         "Meio Ambiente",
@@ -21,24 +26,48 @@ const DadosEmpresa = () => {
         "Idosos",
         "Pessoas com Deficiência",
         "Justiça Social"
+    ];
 
-    ]
+    // State variables to hold the values of the form inputs
+    const [RazãoSocial, setRazãoSocial] = useState('');
+    const [NomeResponsavel, setNomeResponsavel] = useState('');
+    const [Categoria, setCategoria] = useState('');
+    const [CNPJ, setCNPJ] = useState('');
+    const [Email, setEmail] = useState('');
+    const [Senha, setSenha] = useState('');
+    const [ConfirmarSenha, setConfirmarSenha] = useState('');
+    const [Rua, setRua] = useState('');
+    const [Estado, setEstado] = useState('');
+    const [Cidade, setCidade] = useState('');
+    const [Telefone, setTelefone] = useState('');
+    const [CEP, setCEP] = useState('');
+    const [Descrição, setDescrição] = useState('');
 
+    const cadastrarONG = () => {
+        const novaONG = {
+            id: new Date().getTime(),
+            razaoSocial: RazãoSocial,
+            nomeResponsavel: NomeResponsavel,
+            categoria: Categoria,
+            cnpj: CNPJ,
+            email: Email,
+            senha: Senha,
+            rua: Rua,
+            estado: Estado,
+            cidade: Cidade,
+            telefone: Telefone,
+            cep: CEP,
+            descricao: Descrição
+        };
 
-    const [RazãoSocial, setRazãoSocial] = useState('')
-    const [NomeResponsavel, setNomeResponsavel] = useState('')
-    const [Categoria, setCategoria] = useState('')
-    const [CNPJ, setCNPJ] = useState('')
-    const [Email, setEmail] = useState('')
-    const [Senha, setSenha] = useState('')
-    const [ConfirmarSenha, setConfirmarSenha] = useState('')
-    const [Rua, setRua] = useState('')
-    const [Estado, setEstado] = useState('')
-    const [Cidade, setCidade] = useState('')
-    const [Telefone, setTelefone] = useState('')
-    const [CEP, setCEP] = useState('')
-    const todosCamposPreenchidos = RazãoSocial && NomeResponsavel && Categoria && CNPJ && Email && Senha && ConfirmarSenha
+        const ongsSalvas = Cookies.get("ongs");
+        const ongs = ongsSalvas ? JSON.parse(ongsSalvas) : [];
+        ongs.push(novaONG);
+        Cookies.set("ongs", JSON.stringify(ongs));
 
+        // Add a new card when selecting a category
+        setCategoria(Categoria);
+    };
 
     return (
         <form className="DadosEmpresa">
@@ -58,16 +87,16 @@ const DadosEmpresa = () => {
                     placeholder="Nome Responsavel"
                     valor={NomeResponsavel}
                     aoAlterar={valor => setNomeResponsavel(valor)} />
-                <Form
-                    obrigatorio={true}
-                    placeholder="CNPJ"
-                    valor={CNPJ}
-                    aoAlterar={valor => setCNPJ(valor)} />
                 <FormList
                     obrigatorio={true}
                     itens={Categorias}
                     valor={Categoria}
                     aoAlterar={valor => setCategoria(valor)} />
+                <Form
+                    obrigatorio={true}
+                    placeholder="CNPJ"
+                    valor={CNPJ}
+                    aoAlterar={valor => setCNPJ(valor)} />
                 <Form
                     obrigatorio={true}
                     placeholder="Email"
@@ -108,21 +137,21 @@ const DadosEmpresa = () => {
                     placeholder="Telefone"
                     valor={Telefone}
                     aoAlterar={valor => setTelefone(valor)} />
-                <ColocarImagem/>    
+                <Form
+                    obrigatorio={true}
+                    placeholder="Descrição"
+                    valor={Descrição}
+                    aoAlterar={valor => setDescrição(valor)} />
+                <ColocarImagem />
             </div>
             <div className="botãoCadastro">
-                {todosCamposPreenchidos ? (
-                    <Link to={"/"}>
-                        <Botao2 texto="Cadastrar" />
-                    </Link>
-                ) : (
-                    <Botao2 texto="Cadastrar" disabled />
-                )}
+                <Link to={"/categorias"}>
+                    <Botao2 texto="Cadastrar" onClick={cadastrarONG} />
+                </Link>
             </div>
             <Footer />
-
         </form>
-    )
+    );
 }
 
-export default DadosEmpresa
+export default DadosEmpresa;

@@ -1,6 +1,7 @@
 import "./formlist.css"
 
 const FormList = (props) => {
+    
     const aoDigitado = (evento) => {
         props.aoAlterar(evento.target.value)
         

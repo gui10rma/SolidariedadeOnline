@@ -1,21 +1,28 @@
-import React from 'react';
-import Dropdown from 'react-bootstrap/Dropdown';
+import React, { useState } from 'react';
+import "./dropcategorias.css"
 
+function DropdownCategoria({ itens, onCategoriaChange }) {
+    const [categoriaSelecionada, setCategoriaSelecionada] = useState('Selecione uma categoria');
 
-function DropdownFormList({ itens, valor, aoAlterar }) {
+    const handleCategoriaSelecionada = (categoria) => {
+        setCategoriaSelecionada(categoria);
+        console.log('Categoria selecionada:', categoria); // Adicione esta linha
+        onCategoriaChange(categoria);
+    };
+
     return (
-        <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-                {valor}
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu>
-                {itens.map(item => (
-                    <Dropdown.Item key={item} onClick={() => aoAlterar(item)}>{item}</Dropdown.Item>
+        <div>
+            <h3>Categorias</h3>
+            <select className="Drop" value={categoriaSelecionada} onChange={(e) => handleCategoriaSelecionada(e.target.value)}>
+                <option disabled>Selecione uma categoria</option>
+                {itens.map((categoria) => (
+                    <option key={categoria} value={categoria}>{categoria}</option>
                 ))}
-            </Dropdown.Menu>
-        </Dropdown>
+            </select>
+            <p>Categoria selecionada: {categoriaSelecionada}</p>
+        </div>
     );
 }
 
-export default DropdownFormList;
+export default DropdownCategoria;
+
