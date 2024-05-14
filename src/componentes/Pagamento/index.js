@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import BarraAcessibilidade from '../BarraAcessibilidade';
-import Footer from '../Footer';
-import NavBar from '../NavBar';
-import "./pagamento.css";
+import Botao2 from '../Botao2';
+import Card from '../Card';
 import CartaoPronto from '../CartaoPronto';
 import DropdownCategoria from '../DropCategorias';
-import { useState } from 'react';
-import Card from '../Card';
+import Footer from '../Footer';
+import NavBar from '../NavBar';
 import SeletorDeValor from '../SeletorDeValor';
-import Botao2 from '../Botao2';
-import { Link } from 'react-router-dom';
+import "./pagamento.css";
 function Pagamentos() {
     const Categorias = [
         "Cartão de Credito",
@@ -42,7 +41,7 @@ function Pagamentos() {
                 
             </div>
             <div className="PagamentoContainer">
-            <Link to={"/confirma"}>
+            <Link to={"/confirmacao"}>
             <Botao2 texto="Pagar" />
             </Link>
             </div>
