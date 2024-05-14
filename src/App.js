@@ -10,6 +10,7 @@ import Categorias from "./componentes/Categoria";
 import Doacao from "./componentes/Doacoes";
 import Perfil from "./componentes/Perfil";
 import Pagamentos from "./componentes/Pagamento";
+import ConfirmacaoPagamento from "./componentes/PagamentoConfirmação";
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
         <Route path="/doacoes" element={<Doacao/>}/>
         <Route path="/perfil" element={<Perfil/>}/>
         <Route path="/pagamentos" element={<Pagamentos/>}/>
+        <Route path="/confirmacao" element={<ConfirmacaoPagamento/>}/>
       </Routes>
       </BrowserRouter>
     </div>

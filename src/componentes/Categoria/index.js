@@ -7,6 +7,7 @@ import Footer from "../Footer";
 import NavBar from "../NavBar";
 import "./categoria.css";
 import Botao2 from "../Botao2";
+import { Link } from "react-router-dom";
 
 function Categorias() {
 
@@ -36,7 +37,9 @@ function Categorias() {
             <NavBar />
             <DropdownCategoria itens={Categorias} onCategoriaChange={handleCategoriaChange} />
             <div className="CardsContainer">
+                <Link to="/pagamentos">
                 <Card Razãosocial="Sorisso de criança" imagem="/imagens/ImagemPrincipal.png" descricao="Garantir que todas as crianças tenham acesso a direitos básicos, como educação de qualidade, alimentação adequada, cuidados médicos e proteção contra qualquer forma de violência." />
+                </Link>
                 <Card Razãosocial="Sorisso de Prata" imagem="/imagens/ImagemPrincipal3.png" descricao="Promover o bem-estar, dignidade e qualidade de vida dos idosos, proporcionando cuidados integrais e atividades que estimulem o corpo, a mente e o espírito." />
                 <Card Razãosocial="Casa dos peludos" imagem="/imagens/ImagemPrincipal2.jpg" descricao="Resgatar, proteger e cuidar dos animais em situação de risco, promovendo a conscientização sobre a importância do respeito e da compaixão por todas as formas de vida." />
             </div>

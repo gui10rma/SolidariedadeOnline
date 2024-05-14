@@ -1,0 +1,57 @@
+.Confirmacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #000, #043809); /* Gradiente de preto para verde escuro */
+    color: #043809; /* Verde escuro */
+    padding: 20px;
+}
+
+.ConfirmacaoContainer {
+    max-width: 600px;
+    text-align: center;
+    padding: 40px;
+    background-color: #cfc98f; /* Amarelo claro */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #043809; /* Verde escuro */
+}
+
+.ConfirmacaoContainer h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #043809; /* Verde escuro */
+}
+
+.ConfirmacaoContainer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #043809; /* Verde escuro */
+}
+
+.ConfettiContainer {
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+
+.Confetti {
+    position: absolute;
+    background-color: #f1c40f; /* Amarelo */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    animation: confetti-fall 5s linear infinite; /* Animando durante 5 segundos */
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translate(0, -100vh) rotate(90deg);
+    }
+    100% {
+        transform: translate(200vw, 100vh) rotate(90deg);
+    }
+}
