@@ -1,0 +1,35 @@
+.perfil-card {
+    border-radius: 10px;
+    width: 1000px;
+    height: 300px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom, #043809 50%, #6D5901 50%);
+    border-radius: 30px;
+}
+
+.perfil-header {
+    margin-bottom: 20px;
+}
+
+.perfil-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.perfil-header p {
+    margin: 5px 0 0;
+    color: #777;
+}
+
+.perfil-body p {
+    margin: 5px 0;
+}
+.obrigado {
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size: 60px;
+    padding-top: 50px; /* Adiciona um espaço extra no topo */
+}

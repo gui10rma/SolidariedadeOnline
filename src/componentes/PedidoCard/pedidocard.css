@@ -1,0 +1,60 @@
+.pedido-card {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 10px;
+  justify-content: space-between; /* Distribui os itens igualmente */
+}
+
+.ong-logo {
+
+  width: 150px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+.ong-info {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.ong-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.forma-pagamento {
+  flex: 1;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.status-dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.status-approve {
+  background-color: green;
+}
+
+.status-reject {
+  background-color: red;
+}
+
+.status-pending {
+  background-color: yellow;
+}
+
+.status-default {
+  background-color: gray;
+}
+
+  

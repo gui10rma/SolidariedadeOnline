@@ -1,3 +1,11 @@
+.Titulo {
+    font-size: 48px;
+    color: white;
+    margin-left: 100px;
+    font-weight: bold;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
 .Drop {
     background-color: #10438F;
     color: white;
@@ -8,6 +16,8 @@
     font-size: 12px; /* Reduz o tamanho da fonte */
     height: auto; /* Ajusta a altura automaticamente */
     width: auto; /* Ajusta a largura automaticamente */
+    margin-left: 100px;
+    
 }
 
 .Drop option {
@@ -18,4 +28,8 @@
 .Drop:focus {
     outline: none;
     box-shadow: 0 0 5px #10438F;
+}
+.categoriaselecionada{
+    margin: 20px;
+    margin-left: 100px;
 }

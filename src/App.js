@@ -7,7 +7,8 @@ import DadosEmpresa from "./componentes/DadosEmpresa";
 import DadosDoadores from "./componentes/DadosDoadores";
 import CartaoAdd from "./componentes/Cartaoadd";
 import Categorias from "./componentes/Categoria";
-
+import Doacao from "./componentes/Doacoes";
+import Perfil from "./componentes/Perfil";
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,8 @@ function App() {
         <Route path="/DadosDoadores" element={<DadosDoadores/>}/>
         <Route path="/cartaoAdd" element={<CartaoAdd/>}/>
         <Route path="/categorias" element={<Categorias/>}/>
+        <Route path="/doacoes" element={<Doacao/>}/>
+        <Route path="/perfil" element={<Perfil/>}/>
       </Routes>
       </BrowserRouter>
     </div>

@@ -2,15 +2,15 @@
 import React from "react";
 import "./card.css";
 
-const Card = ({ ong }) => {
+const Card = (props) => {
     return (
         <div className="colaborador">
             <div className="cabecalho">
-                <img src={ong.imagem} alt={ong.nome} />
+                <img src={props.imagem} alt={props.Razãosocial} />
             </div>
             <div className="rodape">
-                <h4>{ong.nome}</h4>
-                <h5>{ong.descricao}</h5>
+                <h4>{props.Razãosocial}</h4>
+                <h5>{props.descricao}</h5>
             </div>
         </div>
     );

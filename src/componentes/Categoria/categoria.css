@@ -1,0 +1,22 @@
+.CardsContainer {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    justify-content: space-between; /* Distribui os cards igualmente em cada linha */
+    margin: 40px 40px; /* Cria um espaçamento negativo para compensar o padding dos cards */
+    margin-top: 40px;
+}
+
+
+.Card {
+    flex: 0 0 calc(33.33% - 20px); /* Cada card ocupa 1/3 da largura com um espaçamento de 10px em cada lado */
+    max-width: calc(33.33% - 20px); /* Define a largura máxima para cada card */
+    margin: 10px; /* Espaçamento entre os cards */
+    box-sizing: border-box; /* Inclui as bordas e o preenchimento no tamanho total */
+}
+.vermais{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}

@@ -9,7 +9,7 @@ const CartaoAdd = () => {
         <div>
             <BarraAcessibilidade />
             <NavBar />
-            <h10>Cartao de Credito</h10>
+            <h1 className="TituloCartao">Cartao de Credito</h1>
             <div className="Cartao1">
             <CreditCardForm/>
             </div>

@@ -42,6 +42,7 @@ function DadosEmpresa() {
     const [Telefone, setTelefone] = useState('');
     const [CEP, setCEP] = useState('');
     const [Descrição, setDescrição] = useState('');
+    const todosCamposPreenchidos = RazãoSocial && CNPJ && Email && Senha && ConfirmarSenha && Rua && Estado && Cidade && Telefone  && CEP;
 
     const cadastrarONG = () => {
         const novaONG = {
@@ -145,9 +146,13 @@ function DadosEmpresa() {
                 <ColocarImagem />
             </div>
             <div className="botãoCadastro">
-                <Link to={"/categorias"}>
-                    <Botao2 texto="Cadastrar" onClick={cadastrarONG} />
-                </Link>
+            {todosCamposPreenchidos ? (
+                    <Link to={"/categorias"}>
+                        <Botao2 texto="Cadastrar" onClick={cadastrarONG} />
+                    </Link>
+                ) : (
+                    <Botao2 texto="Prencha" disabled/>
+                )}
             </div>
             <Footer />
         </form>

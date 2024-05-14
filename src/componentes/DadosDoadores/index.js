@@ -82,11 +82,11 @@ const DadosDoadores = () => {
             </div>
             <div className="botãoCadastro">
                 {todosCamposPreenchidos ? (
-                    <Link to={"/DadosDoadoresEndereço"}>
+                    <Link to={"/perfil"}>
                         <Botao2 texto="Cadastrar" />
                     </Link>
                 ) : (
-                    <Botao2 texto="Avançar" disabled />
+                    <Botao2 texto="Prencha" disabled />
                 )}
             </div>
             <Footer />

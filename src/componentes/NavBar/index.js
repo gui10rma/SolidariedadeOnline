@@ -15,8 +15,12 @@ const NavBar = () => {
             <Link to={"/depoimentos"}>
             <Botao texto="Depoimentos" />
             </Link>
+            <Link to={"/categorias"}>
             <Botao texto="Categorias" />
+            </Link>
+            <Link to={"/doacoes"}>
             <Botao texto="Doações" />
+            </Link>
             <Link to="/login" className="NavLink">
             <BotaoComImagem src="/imagens/Perfil.png" alt="Perfil" />
             </Link>
