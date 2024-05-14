@@ -1,16 +1,18 @@
 import React from 'react';
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import "./imagemprincipal.css"
+import 'slick-carousel/slick/slick.css';
+import "./imagemprincipal.css";
 
 const ImagemPrincipal = ({ images }) => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true, // Ativa o autoplay
+        autoplaySpeed: 3000 // Intervalo de tempo entre os slides (3 segundos)
     };
 
     return (
