@@ -14,6 +14,7 @@ import ConfirmacaoPagamento from "./componentes/PagamentoConfirmação";
 function App() {
   return (
     <div className="App">
+      
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}/>

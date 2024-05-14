@@ -34,3 +34,42 @@
     background-color: black;
     color: white;
 }
+/* Estilos para o modo normal */
+.barra_acessibilidade {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    border-bottom: 1px solid #ccc;
+}
+
+.barra_acessibilidade a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.barra_acessibilidade button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para o modo de alto contraste */
+.barra_acessibilidade.contraste {
+    background-color: #000;
+    color: #fff;
+}
+
+.barra_acessibilidade.contraste a {
+    color: #fff;
+}
+
+.barra_acessibilidade.contraste button {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+}
