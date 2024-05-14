@@ -9,6 +9,7 @@ import CartaoAdd from "./componentes/Cartaoadd";
 import Categorias from "./componentes/Categoria";
 import Doacao from "./componentes/Doacoes";
 import Perfil from "./componentes/Perfil";
+import Pagamentos from "./componentes/Pagamento";
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
         <Route path="/categorias" element={<Categorias/>}/>
         <Route path="/doacoes" element={<Doacao/>}/>
         <Route path="/perfil" element={<Perfil/>}/>
+        <Route path="/pagamentos" element={<Pagamentos/>}/>
       </Routes>
       </BrowserRouter>
     </div>
