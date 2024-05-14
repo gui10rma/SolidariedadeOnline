@@ -9,6 +9,7 @@ import { useState } from 'react';
 import Card from '../Card';
 import SeletorDeValor from '../SeletorDeValor';
 import Botao2 from '../Botao2';
+import { Link } from 'react-router-dom';
 function Pagamentos() {
     const Categorias = [
         "Cartão de Credito",
@@ -41,7 +42,9 @@ function Pagamentos() {
                 
             </div>
             <div className="PagamentoContainer">
+            <Link to={"/confirma"}>
             <Botao2 texto="Pagar" />
+            </Link>
             </div>
             <Footer />
         </div>
