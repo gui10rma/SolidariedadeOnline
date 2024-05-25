@@ -1,0 +1,26 @@
+.botaoImg2 {
+    background-color: #10438f;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    color: #FFF;
+    padding: 10px; /* Aumenta o padding para tornar o botão maior */
+    margin: 10px;   
+    float: inline-end;
+    border-radius: 50%; /* Use 50% para criar um círculo */
+    max-width: 50%;
+    display: flex; /* Adicionado para centralizar verticalmente */
+    align-items: center; /* Adicionado para centralizar verticalmente */
+    justify-content: center; /* Adicionado para centralizar horizontalmente */
+}
+
+.botaoImg2:hover {
+    color: #f0f0f0;
+    background-color: rgb(112, 112, 245);
+}
+.botaoImg2 img{
+    width: 20px;
+    height: 20px;
+    float: inline-end;
+    margin-left: 5px;
+}
