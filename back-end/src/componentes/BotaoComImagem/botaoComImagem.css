@@ -1,0 +1,23 @@
+.botaoImg {
+    background-color: #043809;
+    font-weight: 700;
+    font-size: 18px;
+    border: none; 
+    cursor: pointer;
+    color: #FFF;
+    padding: 3px;
+    margin: 18px;   
+    float: inline-end;
+    
+
+}
+.botaoImg:hover {
+    color: #f0f0f0;
+    background-color: #9bc79f;
+}
+.botaoImg img{
+    width: 40px;
+    height: 40px;
+    float: inline-end;
+    margin-left: 5px;
+}
