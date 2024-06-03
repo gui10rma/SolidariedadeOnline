@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import ImagemPrincipal from "../ImagemPrincipal";
 import NavBar from "../NavBar";
 import Sobre from "../Sobre";
+import "./home.css";
 
 const images = [
     { src: '/imagens/ImagemPrincipal.png', alt: 'Ong Sorriso de Criança 1' },

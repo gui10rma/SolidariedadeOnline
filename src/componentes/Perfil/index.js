@@ -7,7 +7,8 @@ import NavBar from "../NavBar";
 import PerfilCard from "../PerfilCard";
 import "./perfil.css";
 function Perfil() {
-    return (<div>
+    return (
+    <div className="Per1">
         <BarraAcessibilidade />
         <NavBar />
         <div className="Perfil">
@@ -31,6 +32,7 @@ function Perfil() {
         </div>
         <Footer />
     </div>
+    
     );
 }
 

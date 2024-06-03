@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './BarraAcessibilidade.css'; // Importe o arquivo CSS para estilização
+import './BarraAcessibilidade.css';
 
 const BarraAcessibilidade = () => {
     const aumentarFonte = () => {
@@ -20,18 +20,15 @@ const BarraAcessibilidade = () => {
 
     const toggleContraste = () => {
         setContraste(!contraste);
+        document.body.classList.toggle('alto-contraste');
     };
 
     return (
         <div className={`barra_acessibilidade ${contraste ? 'contraste' : ''}`}>
             <div>
-                <a href="#menu">[1] Ir para o menu</a>
-                <a href="#conteudo">[2] Ir para o conteúdo</a>
-                <a href="#rodape">[3] Ir para o rodapé</a>
-                <a href="acessibilidade.html">Acessibilidade</a>
-                <button onClick={toggleContraste} id="btn-contraste-on">CONTRASTE </button>
-                <button onClick={aumentarFonte}>A+</button>
-                <button onClick={diminuirFonte}>A-</button>
+                <button onClick={toggleContraste} className="botao">CONTRASTE</button>
+                <button onClick={aumentarFonte} className="botao">A+</button>
+                <button onClick={diminuirFonte} className="botao">A-</button>
             </div>
         </div>
     );

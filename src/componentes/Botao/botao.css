@@ -1,15 +1,401 @@
+/* Estilos padrão para a NavBar e SolidariedadeTexto */
+.NavBar {
+    background-color: #043809;
+    padding-bottom: 10px;
+}
+
+.SolidariedadeTexto {
+    color: white;
+    margin-right: 50px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+/* Estilos padrão para o botão */
 .botao {
     background-color: #043809;
     font-weight: 700;
     font-size: 18px;
-    border: none; 
+    border: none;
     cursor: pointer;
     color: #FFF;
-    padding: 3px;
+    padding: 10px;
     margin: 18px;
-
+    border-radius: 5px; /* Bordas arredondadas para melhor aparência */
 }
+
 .botao:hover {
     color: #f0f0f0;
     background-color: #9bc79f;
+}
+
+/* Estilos para alto contraste */
+.alto-contraste .NavBar {
+    background-color: #000;
+}
+
+.alto-contraste .SolidariedadeTexto {
+    color: yellow;
+    font-size: 55px; /* Aumentar o tamanho do texto para maior legibilidade */
+}
+
+.alto-contraste .botao {
+    background-color: #000;
+    border: 2px solid yellow;
+    color: yellow;
+    font-size: 20px; /* Aumentar o tamanho do texto dos botões */
+}
+
+.alto-contraste .botao:hover {
+    color: #000;
+    background-color: yellow;
+    border: 2px solid #000;
+}
+
+/* Outros elementos que podem ser afetados pelo alto contraste */
+.alto-contraste {
+    background-color: #000;
+    color: yellow;
+}
+
+/* Estilos para alto contraste */
+.alto-contraste .botaoImg {
+    background-color: #000;
+    border: 2px solid yellow;
+    color: yellow;
+    font-size: 20px; /* Aumentar o tamanho do texto dos botões */
+}
+
+.alto-contraste .botaoImg:hover {
+    color: #000;
+    background-color: yellow;
+    border: 2px solid #000;
+}
+/* Estilos para alto contraste */
+.alto-contraste .botao2 {
+    background-color: black; /* Alterando a cor do botão para amarelo */
+    border: 2px solid yellow;
+    color: yellow; /* Alterando a cor do texto para preto */
+    font-size: 20px; /* Aumentar o tamanho do texto dos botões */
+}
+
+.alto-contraste .botao2:hover {
+    color: #000;
+    background-color: yellow;
+    border: 2px solid #000;
+}
+.alto-contraste .botaoImg2 {
+    background-color: black; /* Alterando a cor do fundo para amarelo */
+    color: #000; /* Alterando a cor do texto para preto */
+    border: 2px solid yellow;
+    font-size: 20px; /* Aumentar o tamanho do texto dos botões */
+}
+
+.alto-contraste .botaoImg2:hover {
+    color: #000;
+    background-color: yellow;
+    border: 2px solid #000;
+}
+.alto-contraste .botaoImg3 {
+    background-color: black; /* Alterando a cor do fundo para amarelo */
+    color: #000; /* Alterando a cor do texto para preto */
+    border: 2px solid yellow;
+    font-size: 20px; /* Aumentar o tamanho do texto dos botões */
+}
+
+.alto-contraste .botaoImg3:hover {
+    color: #000;
+    background-color: yellow;
+    border: 2px solid #000;
+}
+/* Estilos para alto contraste */
+.alto-contraste .colaborador .cabecalho {
+    background-color: yellow; /* Alterando a cor de fundo para amarelo */
+}
+
+.alto-contraste .colaborador .rodape {
+    background: black; /* Alterando a cor de fundo para preto */
+}
+
+.alto-contraste .colaborador .rodape h4,
+.alto-contraste .colaborador .rodape h5 {
+    color: yellow; /* Alterando a cor do texto para amarelo */
+}
+/* Estilos para alto contraste */
+.alto-contraste .btn-dark {
+    background-color: yellow; /* Alterando a cor de fundo para amarelo */
+    color: #000; /* Alterando a cor do texto para preto */
+    border: 1px solid #000; /* Adicionando uma borda para melhorar a visibilidade */
+}
+
+.alto-contraste .btn-dark:hover {
+    background-color: #000; /* Alterando a cor de fundo para preto */
+    color: yellow; /* Alterando a cor do texto para amarelo */
+}
+.alto-contraste .TituloCartao {
+    color: yellow; /* Alterando a cor do texto para amarelo */
+    background-color: black; /* Adicionando fundo preto */
+}
+
+.alto-contraste .Cartao1 {
+    background-color: black; /* Alterando a cor de fundo para amarelo */
+    color: black; /* Alterando a cor do texto para preto */
+    border: 1px solid black; /* Adicionando uma borda para melhorar a visibilidade */
+}
+.alto-contraste .CardsContainer {
+    background-color: black; /* Alterando a cor de fundo para preto */
+}
+
+.alto-contraste .Card {
+    background-color: yellow; /* Alterando a cor de fundo para amarelo */
+    color: black; /* Alterando a cor do texto para preto */
+    border: 1px solid black; /* Adicionando uma borda para melhorar a visibilidade */
+}
+
+.alto-contraste .Categorias{
+    background-color: #000;
+}
+
+.alto-contraste .vermais {
+    background-color: black; /* Alterando a cor de fundo para preto */
+    color: yellow; /* Alterando a cor do texto para amarelo */
+    border: 1px solid yellow; /* Adicionando uma borda para melhorar a visibilidade */
+}
+.alto-contraste .subtitulo {
+    color: yellow; /* Alterando a cor do texto para amarelo */
+    background-color: black; /* Adicionando fundo preto */
+}
+
+.alto-contraste .formulario {
+    background-color: black; /* Alterando a cor de fundo para preto */
+    color: yellow; /* Alterando a cor do texto para amarelo */
+}
+
+.alto-contraste .botãoCadastro {
+    color: black; /* Alterando a cor do texto para preto */
+    border: 1px solid black; /* Adicionando uma borda para melhorar a visibilidade */
+}
+
+.alto-contraste .mensagem-erro {
+    color: yellow; /* Alterando a cor do texto para amarelo */
+    background-color: black; /* Adicionando fundo preto */
+}
+
+.alto-contraste .erro {
+    color: yellow; /* Alterando a cor do texto para amarelo */
+    background-color: red; /* Adicionando fundo vermelho para maior contraste */
+}
+.alto-contraste .pedidos {
+    color: yellow; /* Alterar a cor do texto para amarelo */
+}
+
+.alto-contraste .vermais {
+    color: yellow; /* Alterar a cor do texto para amarelo */
+}
+/* Estilos para alto contraste */
+.alto-contraste .Titulo {
+    color: yellow; /* Alterar a cor do texto para amarelo */
+}
+.alto-contraste .doacao{
+    background-color: #000;
+}
+.alto-contraste .Drop {
+    background-color: black; /* Fundo preto */
+    color: yellow; /* Texto amarelo */
+}
+
+.alto-contraste .Drop option {
+    background-color: black; /* Fundo preto */
+    color: yellow; /* Texto amarelo */
+}
+.alto-contraste .depoimentos {
+    background-color: black; /* Altere para a cor de fundo desejada no modo de alto contraste */
+    color: yellow; /* Altere para a cor do texto desejada no modo de alto contraste */
+}
+
+.alto-contraste .DepoimentosContainer {
+    color: yellow; /* Altere para a cor do texto desejada no modo de alto contraste */
+}
+
+.alto-contraste .DepoimentosContainer .texto {
+    color: yellow; /* Altere para a cor do texto desejada no modo de alto contraste */
+}
+
+.alto-contraste .DepoimentosContainer .titulodepoimentos {
+    color: yellow; /* Altere para a cor do texto desejada no modo de alto contraste */
+}
+
+.alto-contraste .categoriaselecionada {
+    color: yellow; /* Texto amarelo */
+}
+.alto-contraste .footer-container {
+    background-color: black; /* Fundo preto */
+    color: yellow; /* Texto amarelo */
+}
+.alto-contraste .titulodepoimentos {
+    color: yellow; /* Altere para a cor do texto desejada no modo de alto contraste */
+}
+
+.alto-contraste .item {
+    color: yellow; /* Texto amarelo */
+}
+.alto-contraste .campo-texto input {
+    background: black; /* Fundo preto */
+    color: yellow; /* Texto amarelo */
+}
+
+.alto-contraste .campo-texto input::placeholder {
+    color: yellow; /* Placeholder amarelo */
+}
+.alto-contraste select {
+    background: black; /* Fundo preto */
+    color: yellow; /* Texto amarelo */
+}
+
+.alto-contraste option {
+    background: black; /* Fundo preto */
+    color: yellow; /* Texto amarelo */
+}
+
+.alto-contraste .input {
+    background: black; /* Fundo preto */
+    color: yellow; /* Texto amarelo */
+}
+.alto-contraste .Home {
+    background-color: black; /* Fundo preto */
+}
+
+.alto-contraste .espaçamento {
+    margin-top: 100px; /* Mantém o espaçamento igual */
+}
+.alto-contraste .input3 {
+    background: black; /* Fundo preto */
+    color: yellow; /* Texto amarelo */
+}
+.alto-contraste .divisao1,
+.alto-contraste .divisao2 {
+    background-color: black; /* Fundo preto */
+}
+
+.alto-contraste .LoginTitulo,
+.alto-contraste .cadastrartitulo,
+.alto-contraste .cadatrartexto {
+    color: yellow; /* Texto amarelo */
+}
+.alto-contraste .PagamentoContainer,
+.alto-contraste .Categoria2,
+.alto-contraste .Categoria3 {
+    background-color: black; /* Fundo preto */
+    color: yellow; /* Texto amarelo */
+}
+/* Estilos para alto contraste */
+.alto-contraste .Confirmacao {
+    background: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+}
+
+.alto-contraste .ConfirmacaoContainer {
+    background-color: #fff; /* Fundo branco */
+    border: 2px solid #000; /* Borda preta */
+    color: #000; /* Texto preto */
+}
+.alto-contraste .pedido-card {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+  }
+  
+  .alto-contraste .ong-logo {
+    border: 2px solid #fff; /* Borda branca */
+  }
+  
+  .alto-contraste .status-dot {
+    border: 2px solid #fff; /* Borda branca */
+  }
+  .alto-contraste .Perfil {
+    background-color: #000; /* Fundo preto */
+    color: yellow; /* Texto branco */
+}
+.alto-contraste .perfil-card {
+    background-image: linear-gradient(to bottom, #000 50%, #000 50%);
+    color: yellow; /* Cor do texto */
+    box-shadow: none; /* Remove a sombra */
+}
+
+.alto-contraste .perfil-header h2 {
+    color: yellow; /* Cor do título */
+}
+
+.alto-contraste .perfil-header p {
+    color: #777; /* Cor do texto secundário */
+}
+
+.alto-contraste .perfil-body p {
+    color: yellow; /* Cor do texto do corpo */
+}
+.alto-contraste .SobreTexto {
+    color: yellow; /* Cor do texto */
+    background-color: black; /* Cor de fundo */
+    border-radius: 0; /* Remove o raio da borda */
+    padding: 20px; /* Reduz o padding */
+    font-size: 20px; /* Reduz o tamanho da fonte */
+    max-width: 100%; /* Remove a largura máxima */
+}
+
+.alto-contraste .SobreTitulo {
+    color: yellow; /* Cor do título */
+}
+
+.alto-contraste .App {
+    background-color: black; /* Altere para a cor de fundo desejada no modo de alto contraste */
+    color: white; /* Altere para a cor do texto desejada no modo de alto contraste */
+}
+.alto-contraste .pedido-card {
+    background-color: black; /* Fundo preto para melhorar o contraste */
+    color: white; /* Texto branco para melhor legibilidade */
+    padding: 10px; /* Espaçamento interno */
+    margin: 10px; /* Espaçamento externo */
+    border-radius: 10px; /* Arredondamento das bordas */
+}
+
+.alto-contraste .ong-logo {
+    width: 120px; /* Tamanho da logo da ONG */
+    height: 50px;
+    margin-right: 10px; /* Espaçamento entre a logo e o texto */
+    border-radius: 10px; /* Arredondamento das bordas */
+}
+
+.alto-contraste .ong-info {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.alto-contraste .ong-name,
+.alto-contraste .forma-pagamento {
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito para destaque */
+}
+
+.alto-contraste .status-dot {
+    width: 20px; /* Tamanho do indicador de status */
+    height: 20px;
+    border-radius: 50%; /* Formato de círculo */
+    margin-right: 5px; /* Espaçamento entre os status */
+}
+
+/* Cores dos status */
+.alto-contraste .status-approve {
+    background-color: green;
+}
+
+.alto-contraste .status-reject {
+    background-color: red;
+}
+
+.alto-contraste .status-pending {
+    background-color: yellow;
+}
+
+.alto-contraste .status-default {
+    background-color: gray;
 }

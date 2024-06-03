@@ -5,7 +5,7 @@ const Botao3 = (props) => {
     const { texto, background, hoverBackground } = props;
 
     return (
-        <button className='botao2' style={{ backgroundColor: background, '--hover-background': hoverBackground }}>
+        <button className='botao3' style={{ backgroundColor: background, '--hover-background': hoverBackground }}>
             {texto}
         </button>
     );
