@@ -8,7 +8,7 @@
     padding: 3px;
     margin: 18px;   
     float: inline-end;
-    
+    position: absolute;
 
 }
 .botaoImg:hover {
