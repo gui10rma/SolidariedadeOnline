@@ -71,7 +71,7 @@ const DadosDoadores = () => {
                     aoAlterar={valor => setEstado(valor)} />
                 <Form
                     obrigatorio={true}
-                    placeholder="CNPJ"
+                    placeholder="Cidade"
                     valor={Cidade}
                     aoAlterar={valor => setCidade(valor)} />
                 <Form
