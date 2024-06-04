@@ -9,10 +9,18 @@ const AcessibilidadeProvider = ({ children }) => {
 
     const aumentarFonte = () => {
         const body = document.querySelector('body');
+        const aumentarFonteSobre = document.querySelector('body div .SobreTexto');
+
         const currentFontSize = window.getComputedStyle(body).fontSize;
         const currentFontSizeValue = parseFloat(currentFontSize);
         body.style.fontSize = (currentFontSizeValue + 1) + 'px';
+
+        const tamanhoAtual = window.getComputedStyle(aumentarFonteSobre).fontSize;
+        const tamanhoAtualValor = parseFloat(tamanhoAtual);
+        aumentarFonteSobre.style.fontSize = (tamanhoAtualValor + 1) + 'px';
     };
+
+
 
     const diminuirFonte = () => {
         const body = document.querySelector('body');
