@@ -42,7 +42,7 @@
 
 .alto-contraste .botao {
     background-color: #000;
-    border: 2px solid yellow;
+    border: 1px solid yellow;
     color: yellow;
     font-size: 20px; /* Aumentar o tamanho do texto dos botões */
 }
@@ -243,6 +243,7 @@
 .alto-contraste .campo-texto input {
     background: black; /* Fundo preto */
     color: yellow; /* Texto amarelo */
+    border: 2px solid yellow;
 }
 
 .alto-contraste .campo-texto input::placeholder {
